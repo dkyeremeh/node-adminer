@@ -1,14 +1,15 @@
-# Node.js Adminer
+# Adminer for Nodejs
 The easy to run adminer version using NPM
 
-## Usage of repository
-```sh
-npm install
-npm start
-# go to browser http://127.0.0.1:8080/
+## Installation
+It is recommended to intall this package globally so you can launch it from anywhere in your system
+```bash
+yarn global add adminer
 ```
 
-## Usage with NPX tool
-```sh
-npx adminer-node
+## Usage
+Run `adminer` or `adminer-node` from any part of your system after installation
+```bash
+# Launch adminer in the browser
+adminer
 ```
