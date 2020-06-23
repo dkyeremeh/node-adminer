@@ -1,0 +1,23 @@
+{
+  "name": "adminer",
+  "version": "1.0.1",
+  "description": "",
+  "main": "server.js",
+  "bin": {
+    "adminer": "./bin/adminer"
+  },
+  "dependencies": {
+    "php-server": "^0.2.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "php": ">=7.2.0"
+  },
+  "scripts": {
+    "install": "wget -O index.php https://github.com/vrana/adminer/releases/download/v4.7.5/adminer-4.7.5-en.php",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Desmond Kyeremeh <elDekyfin@gmail.com>",
+  "license": "ISC"
+}
