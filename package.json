@@ -7,6 +7,8 @@
     "adminer": "./bin/adminer"
   },
   "dependencies": {
+    "download": "^8.0.0",
+    "fs-extra": "^9.0.1",
     "php-server": "^0.2.1"
   },
   "devDependencies": {},
@@ -14,7 +16,7 @@
     "php": ">=7.2.0"
   },
   "scripts": {
-    "install": "wget -O index.php https://github.com/vrana/adminer/releases/download/v4.7.5/adminer-4.7.5-en.php",
+    "install": "node install.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
