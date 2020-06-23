@@ -8,14 +8,20 @@ const adminerSrc =
 const themeUrl =
     'https://raw.githubusercontent.com/Niyko/Hydra-Dark-Theme-for-Adminer/master/adminer.css';
 
-fs.mkdirp('public');
+(async () => {
+    await fs.mkdirp(path.resolve(__dirname, 'public'));
 
-// Download Adminer
-download(adminerSrc).pipe(
-    fs.createWriteStream(path.resolve(__dirname, 'public/index.php'))
-);
+    // Exit if file is already downloaded
+    if (await fs.exists('public/index.php')) {
+        return;
+    }
 
-// Download theme
-download(themeUrl).pipe(
-    fs.createWriteStream(path.resolve(__dirname, 'public/adminer.css'))
-);
+    // Download Adminer and theme
+    download(adminerSrc).pipe(
+        fs.createWriteStream(path.resolve(__dirname, 'public/index.php'))
+    );
+
+    download(themeUrl).pipe(
+        fs.createWriteStream(path.resolve(__dirname, 'public/adminer.css'))
+    );
+})().catch(err => console.log(err));
