@@ -1,6 +1,6 @@
 {
   "name": "adminer-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Run adminer DB client in node",
   "main": "server.js",
   "bin": {
@@ -14,10 +14,13 @@
     "global": "^4.4.0",
     "php-server": "^0.2.1"
   },
-  "devDependencies": {},
+  "homepage": "https://github.com/dkyeremeh/node-adminer",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkyeremeh/node-adminer"
+  },
   "scripts": {
     "install": "node install.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
   "author": "Desmond Kyeremeh <elDekyfin@gmail.com>",
