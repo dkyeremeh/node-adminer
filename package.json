@@ -1,6 +1,6 @@
 {
   "name": "adminer-node",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Run adminer DB client in node",
   "main": "server.js",
   "bin": {
@@ -8,10 +8,8 @@
     "adminer": "./bin/adminer-node"
   },
   "dependencies": {
-    "adminer-node": "^1.0.0",
     "download": "^8.0.0",
     "fs-extra": "^9.0.1",
-    "global": "^4.4.0",
     "php-server": "^0.2.1"
   },
   "homepage": "https://github.com/dkyeremeh/node-adminer",
