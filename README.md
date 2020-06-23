@@ -10,5 +10,5 @@ npm start
 
 ## Usage with NPX tool
 ```sh
-npx adminer
+npx adminer-node
 ```

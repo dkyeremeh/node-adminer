@@ -1,20 +1,20 @@
 {
-  "name": "adminer",
-  "version": "1.0.1",
-  "description": "",
+  "name": "adminer-node",
+  "version": "1.0.0",
+  "description": "Run adminer DB client in node",
   "main": "server.js",
   "bin": {
-    "adminer": "./bin/adminer"
+    "adminer-node": "./bin/adminer-node",
+    "adminer": "./bin/adminer-node"
   },
   "dependencies": {
+    "adminer-node": "^1.0.0",
     "download": "^8.0.0",
     "fs-extra": "^9.0.1",
+    "global": "^4.4.0",
     "php-server": "^0.2.1"
   },
   "devDependencies": {},
-  "engines": {
-    "php": ">=7.2.0"
-  },
   "scripts": {
     "install": "node install.js",
     "test": "echo \"Error: no test specified\" && exit 1",
