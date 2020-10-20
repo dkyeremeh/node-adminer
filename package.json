@@ -1,6 +1,6 @@
 {
   "name": "adminer-node",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Run adminer DB client in node",
   "main": "server.js",
   "bin": {
