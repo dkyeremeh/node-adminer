@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+const yargs = require('yargs/yargs');
+const { hideBin } = require('yargs/helpers');
+
+const args = yargs(hideBin(process.argv))
+  .usage('$0 [port]', 'Start adminer. Default port is 8080')
+  .alias('p', 'port')
+  .nargs('p', 1)
+  .default('p', 8080).argv;
+
+const server = require('../server');
+server(args);

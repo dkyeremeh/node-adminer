@@ -19,6 +19,12 @@ npm i -g adminer-node
 Run `adminer` or `adminer-node` from any part of your system after installation
 
 ```bash
-# Launch adminer in the browser
+# Launch adminer in the browser. Default port is 8080
 adminer
+
+# Run adminer on port 9090
+adminer 9090
+
+# Get help
+adminer --help
 ```
