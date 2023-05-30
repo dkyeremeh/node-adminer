@@ -1,6 +1,6 @@
 {
   "name": "adminer-node",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "Run adminer DB client in node",
   "main": "server.js",
   "bin": {
@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "download": "^8.0.0",
-    "fs-extra": "^9.0.1",
-    "php-server": "^0.2.1"
+    "fs-extra": "^11.1.1",
+    "php-server": "^1.0.0"
   },
   "homepage": "https://github.com/dkyeremeh/node-adminer",
   "repository": {
@@ -22,5 +22,12 @@
     "start": "node server.js"
   },
   "author": "Desmond Kyeremeh <elDekyfin@gmail.com>",
-  "license": "ISC"
+  "license": "MIT",
+  "keywords": [
+    "adminer",
+    "RDBMS",
+    "DB Client",
+    "MySql Client",
+    "Postgres Client"
+  ]
 }
