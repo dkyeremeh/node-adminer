@@ -8,6 +8,10 @@ It is recommended to intall this package globally so you can launch it from anyw
 
 ```bash
 yarn global add adminer-node
+# Or use npm
+npm i -g adminer-node
+
+
 ```
 
 ## Usage
