@@ -1,4 +1,5 @@
 const path = require('path');
+const { activateTheme } = require('./setup');
 const exec = require('child_process').exec;
 
 module.exports = async (args) => {
@@ -8,5 +9,7 @@ module.exports = async (args) => {
     base: path.resolve(__dirname, 'public'),
     open: true,
   });
+
+  activateTheme(args.theme);
   console.log(`PHP server running at ${server.url}`);
 };
