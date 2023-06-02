@@ -10,14 +10,16 @@ const activeThemePath = 'public/adminer.css';
 const getThemePath = (theme) =>
   resolve(__dirname, `public/themes/${theme}.css`);
 
-const activateTheme = async (theme = 'hydra') => {
+const activateTheme = async (theme) => {
+  if (!theme) return;
+
   const themePath = getThemePath(theme);
 
   if (!(await fs.exists(themePath))) {
     await downloadTheme(theme);
   }
 
-  console.log('Activating theme:', theme);
+  console.log('Using theme:', theme);
   await fs.copy(themePath, activeThemePath);
 };
 
